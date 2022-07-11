@@ -1,11 +1,18 @@
 package com.knoldus.learning.Entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.sql.Time;
 import java.util.Date;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class AnswerEntity {
 
     @Id
@@ -22,63 +29,4 @@ public class AnswerEntity {
     private Date answeredDate;
 
     private Time answeredTime;
-
-    public AnswerEntity() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Long getScore() {
-        return score;
-    }
-
-    public void setScore(Long score) {
-        this.score = score;
-    }
-
-    public String getQuestionTitle() {
-        return questionTitle;
-    }
-
-    public void setQuestionTitle(String questionTitle) {
-        this.questionTitle = questionTitle;
-    }
-
-    public String getAnswer() {
-        return answer;
-    }
-
-    public void setAnswer(String answer) {
-        this.answer = answer;
-    }
-
-    public String getQuestionTagged() {
-        return questionTagged;
-    }
-
-    public void setQuestionTagged(String questionTagged) {
-        this.questionTagged = questionTagged;
-    }
-
-    public Date getAnsweredDate() {
-        return answeredDate;
-    }
-
-    public void setAnsweredDate(Date answeredDate) {
-        this.answeredDate = answeredDate;
-    }
-
-    public Time getAnsweredTime() {
-        return answeredTime;
-    }
-
-    public void setAnsweredTime(Time answeredTime) {
-        this.answeredTime = answeredTime;
-    }
 }
