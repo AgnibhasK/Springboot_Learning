@@ -13,11 +13,11 @@ import javax.persistence.Table;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "user")
+@Table(name = "login")
 public class LoginEntity {
     @Id
     @Column(nullable = false)
-    private String userId;
+    private String userName;
 
     @Column(nullable = false)
     private String password;
