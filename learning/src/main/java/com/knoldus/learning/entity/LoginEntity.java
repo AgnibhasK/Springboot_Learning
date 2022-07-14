@@ -1,4 +1,4 @@
-package com.knoldus.learning.Entity;
+package com.knoldus.learning.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
